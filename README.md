@@ -121,7 +121,9 @@ Business logic implementation
 API testing with Postman
 Maven project management
 Git and GitHub
+
 Future Improvements
+
 Planned improvements include:
 
 JWT authentication
