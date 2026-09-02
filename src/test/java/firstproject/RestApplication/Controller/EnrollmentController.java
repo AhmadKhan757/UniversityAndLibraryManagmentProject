@@ -19,7 +19,7 @@ public class EnrollmentController {
     public void setEnrollmentService(EnrollmentService enrollmentService) {
         this.enrollmentService = enrollmentService;
     }
-    @PostMapping("{student_Rollno},{course_Id}")
+    @PostMapping("/{student_Rollno}/{course_Id}")
     public ResponseEntity<EnrollmentResponseDTO> saveEnrollment
             (@PathVariable Long student_Rollno,
              @PathVariable Long course_Id){

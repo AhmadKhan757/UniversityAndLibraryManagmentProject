@@ -63,6 +63,8 @@ public class EnrollmentService {
       Enrollment enrollment = new Enrollment();
       enrollment.setStudents(studentExists);
       enrollment.setCourse(courseExists);
+      enrollment.setStudent_Rollno(student_Rollno);
+      enrollment.setCourse_Id(course_Id);
       enrollment.setEnrollment_Date(LocalDate.now());
       Enrollment saveEnrollment = enrollmentRepository.save(enrollment);
 
