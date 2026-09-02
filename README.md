@@ -1,7 +1,7 @@
 University Management System
 A backend REST API project built with Java and Spring Boot for managing university and library-related operations. The project is designed to practice real-world backend development concepts including REST APIs, DTOs, JPA/Hibernate relationships, PostgreSQL, exception handling, and service-layer business logic.
 
-Features
+Features:
 
 
 University Management
