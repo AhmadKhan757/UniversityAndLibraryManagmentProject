@@ -23,6 +23,7 @@ public interface Studentrepository extends JpaRepository<StudentData,Long> {
     @Query("SELECT s FROM StudentData s WHERE s.age > 18")
     List<StudentData> findByAgeGreaterThan18(@Param("age") int age);
 
-    @Query("SELECT s FROM StudentData s WHERE s")
+    @Query("SELECT s FROM StudentData s GROUP BY s.semester ")
+    List<StudentData> findBySemester(@Param("semester")int semester);
 
 }
