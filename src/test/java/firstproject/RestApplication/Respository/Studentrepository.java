@@ -25,5 +25,6 @@ public interface Studentrepository extends JpaRepository<StudentData,Long> {
 
     @Query("SELECT s FROM StudentData s GROUP BY s.semester ")
     List<StudentData> findBySemester(@Param("semester")int semester);
+    //
 
 }
